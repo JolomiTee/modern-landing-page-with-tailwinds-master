@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./style.css" />
     <title>Bookmark Landing Page</title>
   </head>
@@ -144,15 +145,119 @@
       <!-- cards? -->
       <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
         <!-- Card 1 -->
-        <div class="flex flex-col rounded-md shadow-md">
-          <div class="p-6 flex flex-col item-center">
+        <div class="flex flex-col rounded-md shadow-md lg:mb-16">
+          <div class="p-6 flex flex-col items-center">
             <img src="./imgs/logo-chrome.svg" alt="Chrome">
             <h3 class="mt-5 mb-2 text-bg-blue text-lg">Add to Chrome</h3>
-            <p class="mb-2 text-bm-grey font-light">1--</p>
+            <p class="mb-2 text-bm-grey font-light">minimum version 62</p>
           </div>
+          <hr class="border-b border-bm-white">
+          <div class="flex p-6">
+            <button type="button" role="button" title="More info" class="flex-1 btn btn-purple hover:bg-bm-white hover:text-black">Add & Install Extension</button>
+          </div>
+
+        </div>
+        <!-- Card 2 -->
+        <div class="flex flex-col rounded-md shadow-md lg:my-8">
+          <div class="p-6 flex flex-col items-center">
+            <img src="./imgs/logo-firefox.svg" alt="Chrome">
+            <h3 class="mt-5 mb-2 text-bg-blue text-lg">Add to Firefox</h3>
+            <p class="mb-2 text-bm-grey font-light">minimum version 36</p>
+          </div>
+          <hr class="border-b border-bm-white">
+          <div class="flex p-6">
+            <button type="button" role="button" title="More info" class="flex-1 btn btn-purple hover:bg-bm-white hover:text-black">Add & Install Extension</button>
+          </div>
+
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col rounded-md shadow-md lg:mt-16">
+          <div class="p-6 flex flex-col items-center">
+            <img src="./imgs/logo-opera.svg" alt="opera">
+            <h3 class="mt-5 mb-2 text-bg-blue text-lg">Add to Opera</h3>
+            <p class="mb-2 text-bm-grey font-light">minimum version 71</p>
+          </div>
+          <hr class="border-b border-bm-white">
+          <div class="flex p-6">
+            <button type="button" role="button" title="More info" class="flex-1 btn btn-purple hover:bg-bm-white hover:text-black">Add & Install Extension</button>
+          </div>
+
         </div>
 
       </div>
     </section>
+
+    <!-- FAQ -->
+    <section class="bg-bm-white py-20">
+      <div class="container">
+        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+          <h2 class="text-3xl text-center text-bm-blue">Frequently Asked Questions</h2>
+          <p class="text-center text-bm-grey mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim necessitatibus officiis voluptatibus doloribus laboriosam recusandae assumenda consequatur ipsam qui a!</p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="flex flex-col sm:3/4 lg:w-5/12 mt-12 mx-auto">
+          <div class="flex items-center border-b py-4">
+            <span class="flex-1">What is a Bookmark</span>
+            <i class="fa fa-solid fa-chevron-down text-bm-purple"></i>
+          </div>
+          <div class="flex items-center border-b py-4">
+            <span class="flex-1">How can I request a new Bookmark</span>
+            <i class="fa fa-solid fa-chevron-down text-bm-purple"></i>
+          </div>
+          <div class="flex items-center border-b py-4">
+            <span class="flex-1">Is there a mobile app?</span>
+            <i class="fa fa-solid fa-chevron-down text-bm-purple"></i>
+          </div>
+          <div class="flex items-center border-b py-4">
+            <span class="flex-1">What about other Chromium browsers?</span>
+            <i class="fa fa-solid fa-chevron-down text-bm-purple"></i>
+          </div>
+
+          <button type="button" role="button" title="More info" class="flex self-center mt-12 btn btn-purple hover:bg-bm-white hover:text-black">More info</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact us -->
+    <section class="bg-bm-purple text-white py-20">
+      <div class="container">
+        <div class="sm:w-3/4 lg:2/4 mx-auto">
+          <p class="font-light uppercase text-center mb-8">35,000+ ALREADY JOINED</p>
+          <p class="text-3xl text-center">Stay up-to-date with what we're doing</p>
+          <div class="flex flex-col sm:flex-row gap-6 mt-8">
+            <input type="text" placeholder="Enter your email here" class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black">
+            <button type="button" role="button" title="More info" class="btn bg-bm-red hover:bg-bm-white hover:text-black">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer class="bg-bm-blue py-8">
+      <div class="container flex flex-col md:flex-row items-center">
+        <div class="flex flex-1 flex-wrap items-center justify-center sm:justify-start gap-12">
+          <img src="./imgs/logo-bookmark-white.png" alt="Bookmark">
+          <ul class="flex text-white uppercase text-xs gap-12">
+            <li class="cursor-pointer">Features</li>
+            <li class="cursor-pointer">Pricing</li>
+            <li class="cursor-pointer">Contact</li>
+          </ul>
+        </div>
+
+        <div class="flex gap-10 mt-12 md:mt-0">
+          <i class="fa fa-solid fa-facebook text-white text-2xl"></i>
+          <i class="fa fa-solid fa-twitter text-white text-2xl"></i>
+          <i class="fa fa-solid fa-instagram text-white text-2xl"></i>
+        </div>
+      </div>
+    </Footer>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/b2f0bae77c.js" crossorigin="anonymous"></script>
   </body>
 </html>
