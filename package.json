@@ -4,7 +4,7 @@
   "description": "Learning more about tailwindcss by building a static website",
   "main": "index.js",
   "scripts": {
-    "build:tailwinds": "tailwind build src/style.css -o public/style.css"
+    "tcss": "tailwind build src/style.css -o public/style.css"
   },
   "repository": {
     "type": "git",

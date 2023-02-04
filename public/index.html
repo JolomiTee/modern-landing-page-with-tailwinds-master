@@ -4,16 +4,155 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css" />
     <title>Bookmark Landing Page</title>
   </head>
-  <body>
+  <body class="font-Poppins">
+    <!-- Header -->
+    <header>
+      <nav class="container flex justify-between items-center py-4 sm:mt-12">
+        <div class="py-1"><img src="./imgs/logo-bookmark.svg" alt="Bookmark logo"></div>
+        <div class="hidden sm:flex justify-end gap-12">
+          <ul class="flex flex-1 items-center gap-12 text-bm-blue uppercase text-xs">
+            <li class="cursor-pointer">Features</li>
+            <li class="cursor-pointer">Pricing</li>
+            <li class="cursor-pointer">Contact</li>
+          </ul>
+          <button type="button" role="button" title="Log in" class="bg-bm-red text-white rounded-md px-7 py-3 uppercase">Login</button>
+          <div class="flex sm:hidden flex-1 justify-end">
+            <i class="fa fa-solid fa-bars text-2xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="relative">
+      <div class="container flex flex-col-reverse lg:flex-row item-center gap-12 mt-14 lg-mt-28">
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h1 class="text-bm-blue text-3xl md-text-4 lg:text-5xl text-center lg:text-left mb-6">A Simple bookmark Manager</h1>
+          <p class="text-bm-grey text-lg text-center lg:text-left mb-6">
+            A town hall different from bala blu, blue blu bulaba. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava, eba, ewa and everything.
+          </p>
+          <div class="flex flex-justify flex-wrap gap-6">
+            <button type="button" role="button" title="Do this" class="btn btn-purple hover:bg-bm-white hover:text-black">Get it on Chrome</button>
+            <button type="button" role="button" title="Do this" class="btn btn-white hover:bg-bm-purple hover:text-white">Get it on Firefox</button>
+          </div>
+        </div>
+
+        <!-- image -->
+        <div class="flex justify-center flex-1 mb-10 md-mb-16 lg:mb-0 z-10">
+          <img src="./imgs/hero-bg.png" alt="Hero Background" class="w-5/6 h-5/6\ sm:w-3/4 sm:h-3/4 lg:w-full lg:h-full">
+        </div>
+      </div>
+
+      <!-- Rounded Rectangle -->
+      <div class="hidden md:block overflow-hidden bg-bm-purple rounded-l-full absolute h-72 w-2/5 top-32 right-0"></div>
+    </section>
+
+
+    <!-- Features -->
+    <section class="bg-bm-white py-20 mt-20 lg:mt-60">
+      <!-- Heading -->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h2 class="text-3xl text-center text-bm-blue">Features</h2>
+        <p class="text-center text-bm-grey mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim necessitatibus officiis voluptatibus doloribus laboriosam recusandae assumenda consequatur ipsam qui a!</p>
+      </div>
+
+      <section class="relative">
+        <div class="container flex flex-col lg:flex-row-reverse item-center gap-x-12 mt-20 lg-mt-28">
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start md:pl-6">
+            <h1 class="text-bm-blue text-3xl md-text-4 text-center lg:text-left mb-6">Bookmark in one click</h1>
+            <p class="text-bm-grey text-center lg:text-left mb-6">
+              A town hall different from bala blu, blue blu bulaba. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava, eba, ewa and everything.
+            </p>
+            <div class="flex flex-justify flex-wrap gap-6">
+              <button type="button" role="button" title="More info" class="btn btn-purple hover:bg-bm-white hover:text-black">More info</button>
+            </div>
+          </div>
+  
+          <!-- image -->
+          <div class="flex justify-center flex-1 mt-10 md-mb-16 lg:mb-0 z-10">
+            <img src="./imgs/illustration-features-tab-1.png" alt="Features" class="w-5/6 h-5/6\ sm:w-3/4 sm:h-3/4 md:w-full md:h-full">
+          </div>
+        </div>
+  
+        <!-- Rounded Rectangle -->
+        <div class="hidden md:block overflow-hidden bg-bm-purple rounded-r-full absolute h-72 w-2/5 top-32 left-0"></div>
+      </section>
+
+
+
+      <section class="relative">
+        <div class="container flex flex-col-reverse lg:flex-row item-center gap-x-12 mt-20 lg:mt-40">
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start md:pl-6">
+            <h1 class="text-bm-blue text-3xl md-text-4 text-center lg:text-left mb-6">Intelligent search</h1>
+            <p class="text-bm-grey text-center lg:text-left mb-6">
+              A town hall different from bala blu, blue blu bulaba. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava, eba, ewa and everything.
+            </p>
+            <div class="flex flex-justify flex-wrap gap-6">
+              <button type="button" role="button" title="More info" class="btn btn-purple hover:bg-bm-white hover:text-black">More info</button>
+            </div>
+          </div>
+  
+          <!-- image -->
+          <div class="flex justify-center flex-1 mb-10 md-mb-16 lg:mb-0 z-10">
+            <img src="./imgs/illustration-features-tab-2.png" alt="Features" class="w-5/6 h-5/6\ sm:w-3/4 sm:h-3/4 md:w-full md:h-full">
+          </div>
+        </div>
+  
+        <!-- Rounded Rectangle -->
+        <div class="hidden md:block overflow-hidden bg-bm-purple rounded-l-full absolute h-72 w-2/5 top-32 right-0"></div>
+      </section>
+
+      <section class="relative">
+        <div class="container flex flex-col lg:flex-row-reverse item-center gap-x-12 mt-20 lg-mt-28">
+          <!-- Content -->
+          <div class="flex flex-1 flex-col items-center lg:items-start md:pl-6">
+            <h1 class="text-bm-blue text-3xl md-text-4 text-center lg:text-left mb-6">Share your bookmarks</h1>
+            <p class="text-bm-grey text-center lg:text-left mb-6">
+              The farmers will make more money. Your lunch will not be imported, cassava garri ewa and ehhh ehhhhnn. The farmer will make money, the dinner would be cassava eba ewa and everything.
+            </p>
+            <div class="flex flex-justify flex-wrap gap-6">
+              <button type="button" role="button" title="More info" class="btn btn-purple hover:bg-bm-white hover:text-black">More info</button>
+            </div>
+          </div>
+  
+          <!-- image -->
+          <div class="flex justify-center flex-1 mt-10 md-mb-16 lg:mb-0 z-10">
+            <img src="./imgs/illustration-features-tab-3.png" alt="Features" class="w-5/6 h-5/6\ sm:w-3/4 sm:h-3/4 md:w-full md:h-full">
+          </div>
+        </div>
+  
+        <!-- Rounded Rectangle -->
+        <div class="hidden md:block overflow-hidden bg-bm-purple rounded-r-full absolute h-72 w-2/5 top-32 left-0"></div>
+      </section>
+
+    </section>
+
+    <!-- Downloads -->
+    <section class="py-20 mt-20">
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h2 class="text-3xl text-center text-bm-blue">Download the extension</h2>
+        <p class="text-center text-bm-grey mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim necessitatibus officiis voluptatibus doloribus laboriosam recusandae assumenda consequatur ipsam qui a!</p>
+      </div>
+      
+      <!-- cards? -->
+      <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16">
+        <!-- Card 1 -->
+        <div class="flex flex-col rounded-md shadow-md">
+          <div class="p-6 flex flex-col item-center">
+            <img src="./imgs/logo-chrome.svg" alt="Chrome">
+            <h3 class="mt-5 mb-2 text-bg-blue text-lg">Add to Chrome</h3>
+            <p class="mb-2 text-bm-grey font-light">1--</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </body>
 </html>

@@ -4,15 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "bookmark-purple": "#5267DF",
-        "bookmark-red": "#FA5959",
-        "bookmark-blue": "#242A45",
-        "bookmark-grey": "#9194A2",
-        "bookmark-white": "#f7f7f7",
-      },
+        "bm-purple": "#5267DF",
+        "bm-red": "#FA5959",
+        "bm-blue": "#242A45",
+        "bm-grey": "#9194A2",
+        "bm-white": "#F7F7F7",
+      }
     },
     fontFamily: {
-      Poppins: ["Poppins, sans-serif"],
+      Poppins: ["Poppins", "sans-serif"]
     },
     container: {
       center: true,
@@ -21,11 +21,12 @@ module.exports = {
         lg: "1124px",
         xl: "1124px",
         "2xl": "1124px",
-      },
-    },
+      }
+    }
   },
   variants: {
     extend: {},
+    
   },
   plugins: [],
 };
