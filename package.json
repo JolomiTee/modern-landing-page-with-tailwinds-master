@@ -10,13 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/johnkomarnicki/modern-landing-page-with-tailwinds.git"
   },
-  "keywords": ["tailwindcss", "HTML", "CSS"],
+  "keywords": [
+    "tailwindcss",
+    "HTML",
+    "CSS"
+  ],
   "author": "Jolomitee",
   "bugs": {
     "url": "https://github.com/johnkomarnicki/modern-landing-page-with-tailwinds/issues"
   },
   "homepage": "https://github.com/johnkomarnicki/modern-landing-page-with-tailwinds#readme",
   "devDependencies": {
+    "npm-prepare-dist": "^0.4.1",
     "tailwindcss": "^2.1.4"
   }
 }
